@@ -94,6 +94,9 @@ padding: 10px 30px;
 .navbar-default .navbar-nav > li > a {
     color: #007ef3;
 }
+.navbar-default {
+	box-shadow: 0 4px 13px 0 rgba(0, 0, 0, 0.05);
+}
 .navbar-nav > li > a:hover {
     border: 2px solid #007ef3;
 		border-radius: 30px;
@@ -135,12 +138,11 @@ ul.nav .tester a, ul.nav .tester a:hover, ul.nav .tester a:focus  {
 .gb_Zb, .logo {
 		display: block;
 }
-#how_it_works, #values {
+#how_it_works, #testimony {
 	background:#FFF;
-	height: 100vh;
 }
 .headline {
-	margin: 2em auto 2em;
+	margin: 1.5em auto 1em;
 	color: #4582ec;
 }
 .title {
@@ -160,6 +162,10 @@ ul.nav .tester a, ul.nav .tester a:hover, ul.nav .tester a:focus  {
 .separation {
 	margin: 2em auto;
 }
+.value_headline, .testimony_headline, .partner_headline {
+	margin: 1.5em auto 1em;
+	color: #767676;
+}
 .value_description .value_img {
 	display: block;
 	height: 200px;
@@ -174,7 +180,46 @@ ul.nav .tester a, ul.nav .tester a:hover, ul.nav .tester a:focus  {
 .value_title {
 	text-align: center;
 	margin-bottom: 0.5em;
-	color: #4582ec;
+	color: #767676;
+}
+.value_p {
+	text-align: justify;
+	padding: 0 30px;
+}
+#values {
+	background:#ebebeb;
+	margin-top: 2em;
+}
+#footer {
+	margin-top: 2em;
+	background: #4582ec;
+	color: #fff;
+	padding: 30px;
+}
+#footer a {
+	margin-top: 10px;
+}
+.testimony_description {
+	font-family: 'Gotham Rounded';
+	font-weight: 300;
+	text-align: left;
+	color: #767676;
+}
+.testimony_title {
+	font-size: 18px;
+	font-family: 'Gotham Rounded';
+	font-weight: 500;
+	text-align: left;
+	color: #767676;
+}
+.testimony_image {
+	display: block;
+	max-width: 150px;
+	margin: 0.2em 0;
+}
+.partner_clients {
+	text-align: center;
+	margin-bottom: 2em;
 }
 @media screen and (max-width: 768px) {
 	.tagline {
@@ -184,15 +229,41 @@ ul.nav .tester a, ul.nav .tester a:hover, ul.nav .tester a:focus  {
 		 line-height: 120%;
 		 margin-bottom: 0.5em;
 	}
+	.clearfix {
+		margin: 2px auto;
+	}
 	.logo {
 		background-repeat: no-repeat;
 		margin: 8em auto 1em;
 		max-width: 150px;
 	}
-	.headline {
+	.headline, .value_headline {
 		font-size: 24px;
+		margin: 1.5em auto 1em;
 	}
-	.title {
+	.title, .value_title {
 		font-size: 18px;
+		text-align: center;
+	}
+	.testimony_title {
+			font-size: 14px;
+	}
+	.skenario {
+		margin: 0 auto;
+		max-width: 210px;
+	}
+	.skenario-image-1 {
+		float: left;
+	}
+	.skenarion-description-1 {
+		float:right;
+	}
+	.value_p {
+		text-align: center;
+		padding: 0 10px;
+	}
+	.skenario_p {
+		text-align: center;
+		padding: 0 10px;
 	}
 }
