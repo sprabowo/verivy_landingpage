@@ -2,13 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Verivy - Check it then fix it</title>
+    <title>Verivy - Easy way to test your product</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link href="//cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
@@ -37,7 +38,7 @@
                 <li><a href="#">Value</a></li>
                 <li><a href="#">Testimony</a></li>
                 <li><a href="#">FAQ</a></li>
-                <li><a href="#">Client Login</a></li>
+                <li class="client_login"><a href="#">Client Login</a></li>
                 <li class="tester"><a href="#">Become a Tester</a></li>
 
               </ul>
@@ -70,7 +71,7 @@
             <!--<img src="img/logo.png" class="img-responsive" width="300px">-->
             <h2 class="headline">HOW IT WORKS</h2>
             <div class="row">
-                <div class="col-md-6 description skenario-description-1">
+                <div class="col-md-6 description skenario-description-1" data-aos="fade-down">
                     <h3 class="title">Buat Skenario Pengujian</h3>
                     <p class="skenario_p">Rancang instruksi yang akan dilakukan oleh responden saat menggunakan aplikasi Anda. Kami akan membantu Anda membuat instruksi yang baik, untuk mendapatkan hasil yang optimal.</p>
                 </div>
@@ -92,11 +93,11 @@
             <div class="separation">
             </div>
             <div class="row">
-                <div class="col-md-6 description skenario-description-3">
+                <div class="col-md-6 description skenario-description-3 animated fadeInLeft">
                     <h3 class="title">Dapatkan Hasilnya</h3>
                     <p class="skenario_p">Rancang instruksi yang akan dilakukan oleh responden saat menggunakan aplikasi Anda. Kami akan membantu Anda membuat instruksi yang baik, untuk mendapatkan hasil yang optimal.</p>
                 </div>
-                <div class="col-md-6 skenario-image-3">
+                <div class="col-md-6 skenario-image-3 animated fadeInRight">
                   <img class="img-responsive skenario" src="img/ikon-dapatkan-hasilnya.png"/>
                 </div>
             </div>
@@ -182,6 +183,7 @@
   <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
+  <script src="//cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   <script>
       $(document).ready(function(){
         $(".owl-carousel").owlCarousel({
@@ -192,15 +194,27 @@
               autoplayHoverPause:true,
               dots: true,
         });
-        $('.navbar').css({"display":"none"});
+        $('.navbar').css({"background":"rgba(0,0,0,0.39)"});
+        $('.navbar-default .navbar-nav > li > a').css({"color":"#fff"});
+        $('.navbar-default').css({"border":"none"});
+        if (document.documentElement.clientWidth <= 768) {
+          $('.navbar').css({"background":"rgba(0,0,0,0.69)"});
+        }
       });
       $(document).scroll(function(){
-        if($(this).scrollTop() < document.documentElement.clientHeight * 0.69 || $(this).scrollTop() == 0)
+        if($(this).scrollTop() > document.documentElement.clientHeight * 0.69)
         {
-           $('.navbar').css({"display":"none"});
+           $('.navbar').css({"background":"#fff"});
+           $('.navbar-default .navbar-nav > li > a').css({"color":"#007ef3"});
+           $('ul.nav .tester a').css({"color":"#fff"});
         } else {
-           $('.navbar').css({"display":"block"});
-
+          if (document.documentElement.clientWidth <= 768) {
+            $('.navbar').css({"background":"rgba(0,0,0,0.69)"});
+          } else {
+            $('.navbar').css({"background":"rgba(0,0,0,0.39)"});
+          }
+          $('.navbar-default .navbar-nav > li > a').css({"color":"#fff"});
+          $('.navbar-default').css({"border":"none"});
         }
     });
   </script>

@@ -69,13 +69,21 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     border-color: #FFF;
 		box-shadow: none;
 }
-.btn-primary:active:focus {
+.btn-primary:active:focus, .btn-primary:active:hover {
     color: #ffffff;
 		background-color: #4582ec;
 		border-color: #4582ec;
 		box-shadow: none;
 }
-.btn-warning:active:focus {
+.btn-primary:focus, .btn-warning:focus
+{
+	color: #ffffff;
+	background-color: transparent;
+	border-color: #fff;
+	box-shadow: none;
+
+}
+.btn-warning:focus:active,.btn-warning:hover:active {
     color: #ffffff;
 		background-color: #f26522;
 		border-color: #f26522;
@@ -110,6 +118,17 @@ ul.nav .tester a, ul.nav .tester a:hover, ul.nav .tester a:focus  {
 		border: 2px solid transparent;
 		border-radius: 30px;
 		background: #f90;
+}
+ul.nav .client_login a  {
+		color: #FFF;
+		border: 2px solid #007ef3;
+		border-radius: 30px;
+}
+ul.nav .client_login a:hover, ul.nav .tester a:focus  {
+		color: #FFF;
+		border: 2px solid #007ef3;
+		border-radius: 30px;
+		background: transparent;
 }
 .clearfix {
 	margin-top: 5px;
@@ -221,6 +240,9 @@ ul.nav .tester a, ul.nav .tester a:hover, ul.nav .tester a:focus  {
 	text-align: center;
 	margin-bottom: 2em;
 }
+.btn-rounded {
+	width: 219px;
+}
 @media screen and (max-width: 768px) {
 	.tagline {
 		 color: #FFF;
@@ -228,6 +250,9 @@ ul.nav .tester a, ul.nav .tester a:hover, ul.nav .tester a:focus  {
 		 letter-spacing: 1px;
 		 line-height: 120%;
 		 margin-bottom: 0.5em;
+	}
+	.btn-rounded {
+		width: 171px;
 	}
 	.clearfix {
 		margin: 2px auto;
@@ -265,5 +290,8 @@ ul.nav .tester a, ul.nav .tester a:hover, ul.nav .tester a:focus  {
 	.skenario_p {
 		text-align: center;
 		padding: 0 10px;
+	}
+	.navbar {
+		background:rgba(0,0,0,0.69);
 	}
 }
