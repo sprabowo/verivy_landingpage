@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link href="//cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
@@ -33,10 +32,10 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">How</a></li>
-                <li><a href="#">Value</a></li>
-                <li><a href="#">Testimony</a></li>
+                <li><a data-scroll href="#header">Home</a></li>
+                <li><a data-scroll href="#how_it_works">How</a></li>
+                <li><a data-scroll href="#values">Value</a></li>
+                <li><a data-scroll href="#testimony">Testimony</a></li>
                 <li><a href="#">FAQ</a></li>
                 <li class="client_login"><a href="#">Client Login</a></li>
                 <li class="tester"><a href="#">Become a Tester</a></li>
@@ -70,8 +69,17 @@
           <div class="col-md-10 col-md-offset-1">
             <!--<img src="img/logo.png" class="img-responsive" width="300px">-->
             <h2 class="headline">HOW IT WORKS</h2>
-            <div class="row">
-                <div class="col-md-6 description skenario-description-1" data-aos="fade-down">
+            <div class="row visible-xs-block">
+                <div class="col-md-6 skenario-image-1">
+                    <img class="img-responsive" src="img/buat-skenario-pengujian.png"/>
+                </div>
+                <div class="col-md-6 description">
+                    <h3 class="title">Buat Skenario Pengujian</h3>
+                    <p class="skenario_p">Rancang instruksi yang akan dilakukan oleh responden saat menggunakan aplikasi Anda. Kami akan membantu Anda membuat instruksi yang baik, untuk mendapatkan hasil yang optimal.</p>
+                </div>
+            </div>
+            <div class="row hidden-xs">
+                <div class="col-md-6 description skenario-description-1">
                     <h3 class="title">Buat Skenario Pengujian</h3>
                     <p class="skenario_p">Rancang instruksi yang akan dilakukan oleh responden saat menggunakan aplikasi Anda. Kami akan membantu Anda membuat instruksi yang baik, untuk mendapatkan hasil yang optimal.</p>
                 </div>
@@ -92,8 +100,18 @@
             </div>
             <div class="separation">
             </div>
-            <div class="row">
-                <div class="col-md-6 description skenario-description-3 animated fadeInLeft">
+            <div class="row visible-xs-block">
+              <div class="col-md-6 skenario-image-3">
+                <img class="img-responsive skenario" src="img/ikon-dapatkan-hasilnya.png"/>
+              </div>
+                <div class="col-md-6 description skenario-description-3 ">
+                    <h3 class="title">Dapatkan Hasilnya</h3>
+                    <p class="skenario_p">Rancang instruksi yang akan dilakukan oleh responden saat menggunakan aplikasi Anda. Kami akan membantu Anda membuat instruksi yang baik, untuk mendapatkan hasil yang optimal.</p>
+                </div>
+
+            </div>
+            <div class="row hidden-xs">
+                <div class="col-md-6 description skenario-description-3">
                     <h3 class="title">Dapatkan Hasilnya</h3>
                     <p class="skenario_p">Rancang instruksi yang akan dilakukan oleh responden saat menggunakan aplikasi Anda. Kami akan membantu Anda membuat instruksi yang baik, untuk mendapatkan hasil yang optimal.</p>
                 </div>
@@ -143,7 +161,7 @@
             <!--<img src="img/logo.png" class="img-responsive" width="300px">-->
             <h2 class="testimony_headline">Testimony</h2>
             <div class="row">
-              <div class="owl-carousel">
+              <div class="owl-carousel owl-theme">
                   <div>
                     <div class="col-md-3">
                       <img class="img-responsive" src="img/client/photo-profile.png">
@@ -183,7 +201,10 @@
   <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
-  <script src="//cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script src="js/smooth-scroll.js"></script>
+  <script>
+        smoothScroll.init();
+  </script>
   <script>
       $(document).ready(function(){
         $(".owl-carousel").owlCarousel({
@@ -192,7 +213,7 @@
               autoplay:true,
               autoplayTimeout:10000,
               autoplayHoverPause:true,
-              dots: true,
+              dots: true
         });
         $('.navbar').css({"background":"rgba(0,0,0,0.39)"});
         $('.navbar-default .navbar-nav > li > a').css({"color":"#fff"});

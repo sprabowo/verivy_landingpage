@@ -161,7 +161,7 @@ ul.nav .client_login a:hover, ul.nav .tester a:focus  {
 	background:#FFF;
 }
 .headline {
-	margin: 1.5em auto 1em;
+	margin: 2.5em auto 1em;
 	color: #4582ec;
 }
 .title {
@@ -182,7 +182,7 @@ ul.nav .client_login a:hover, ul.nav .tester a:focus  {
 	margin: 2em auto;
 }
 .value_headline, .testimony_headline, .partner_headline {
-	margin: 1.5em auto 1em;
+	margin: 2.5em auto 1em;
 	color: #767676;
 }
 .value_description .value_img {
@@ -260,11 +260,11 @@ ul.nav .client_login a:hover, ul.nav .tester a:focus  {
 	.logo {
 		background-repeat: no-repeat;
 		margin: 8em auto 1em;
-		max-width: 150px;
+		max-width: 200px;
 	}
-	.headline, .value_headline {
+	.headline, .value_headline, .testimony_headline {
 		font-size: 24px;
-		margin: 1.5em auto 1em;
+		margin: 3em auto 1em;
 	}
 	.title, .value_title {
 		font-size: 18px;
@@ -293,5 +293,10 @@ ul.nav .client_login a:hover, ul.nav .tester a:focus  {
 	}
 	.navbar {
 		background:rgba(0,0,0,0.69);
+		min-height: 45px;
+	}
+	.navbar-toggle {
+		margin-top: 9px;
+		margin-bottom: 9px;
 	}
 }
