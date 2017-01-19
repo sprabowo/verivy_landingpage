@@ -100,17 +100,17 @@ padding: 10px 30px;
     border-radius: 4px;
 }
 .navbar-default .navbar-nav > li > a {
-    color: #007ef3;
+    color: #ffffff;
 }
 .navbar-default {
 	box-shadow: 0 4px 13px 0 rgba(0, 0, 0, 0.05);
 }
 .navbar-nav > li > a:hover {
-    border: 2px solid #007ef3;
+    border: 2px solid #fff;
 		border-radius: 30px;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color: #007ef3;
+    color: #fff;
     background-color: transparent;
 }
 ul.nav .tester a, ul.nav .tester a:hover, ul.nav .tester a:focus  {
@@ -119,23 +119,22 @@ ul.nav .tester a, ul.nav .tester a:hover, ul.nav .tester a:focus  {
 		border-radius: 30px;
 		background: #f90;
 }
-ul.nav .client_login a  {
-		color: #FFF;
-		border: 2px solid #007ef3;
+ul.nav .client_login a, ul.nav .client_login a:hover, ul.nav .tester a:focus  {
+		color: #F90;
+		border: 2px solid #FFF;
 		border-radius: 30px;
+		background: #FFF;
 }
-ul.nav .client_login a:hover, ul.nav .tester a:focus  {
-		color: #FFF;
-		border: 2px solid #007ef3;
-		border-radius: 30px;
-		background: transparent;
+.navbar-default {
+    background-color: #007ef3;
+    border-color: transparent;
 }
 .clearfix {
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
 #header {
-	background: url('../img/background.jpg') no-repeat center center fixed;
+	background: url('../img/background_tester.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -144,10 +143,16 @@ ul.nav .client_login a:hover, ul.nav .tester a:focus  {
 }
 .tagline {
 	 color: #FFF;
-	 font-size: 36px;
-	 letter-spacing: 1px;
-	 line-height: 120%;
-	 margin-bottom: 1em;
+	 margin-top: 5em;
+}
+.subtagline {
+	 color: #FFF;
+	 margin-top: 0.2em;
+}
+.step-by {
+	 margin-left: 0px;
+	 color: #fff;
+	 font-size: 24px;
 }
 .logo {
 	background-repeat: no-repeat;
@@ -246,6 +251,10 @@ ul.nav .client_login a:hover, ul.nav .tester a:focus  {
 .partner_img {
 	max-height: 50px;
 }
+.navbar-brand img
+{
+	max-height: 40px;
+}
 @media screen and (max-width: 768px) {
 	.tagline {
 		 color: #FFF;
@@ -299,5 +308,8 @@ ul.nav .client_login a:hover, ul.nav .tester a:focus  {
 	.partner_img {
 		max-height: 40px;
 		margin: 0.2em auto;
+	}
+	.navbar-default {
+	    border-color: transparent;
 	}
 }

@@ -1,185 +1,15 @@
-@font-face {
-	font-family: 'Gotham Rounded';
-	src: url('../font/GothamRounded-Bold.eot');
-	src: url('../font/GothamRounded-Bold.eot?#iefix') format('embedded-opentype'),
-		url('../font/GothamRounded-Bold.woff') format('woff'),
-		url('../font/GothamRounded-Bold.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Gotham Rounded';
-	src: url('../font/GothamRounded-Light.eot');
-	src: url('../font/GothamRounded-Light.eot?#iefix') format('embedded-opentype'),
-		url('../font/GothamRounded-Light.woff') format('woff'),
-		url('../font/GothamRounded-Light.ttf') format('truetype');
-	font-weight: 300;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Gotham Rounded';
-	src: url('../font/GothamRounded-Medium.eot');
-	src: url('../font/GothamRounded-Medium.eot?#iefix') format('embedded-opentype'),
-		url('../font/GothamRounded-Medium.woff') format('woff'),
-		url('../font/GothamRounded-Medium.ttf') format('truetype');
-	font-weight: 500;
-	font-style: normal;
-}
-body {
-	font-family: "Gotham Rounded", sans-serif;
-	font-size: 16px;
-	line-height: 1.42857143;
-	color: #333333;
-}
-.navbar{
-	font-family: "Gotham Rounded", sans-serif;
-}
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: "Gotham Rounded", sans-serif;
-    font-weight: bold;
-    line-height: 1.1;
-    color: inherit;
-}
-.btn {
-    font-family: "Gotham Rounded", sans-serif;
-}
-.btn-primary {
-		color: #ffffff;
-		background-color: #4582ec;
-		border-color: #4582ec;
-		border-width: 3px;
-}
-.btn-warning {
-		color: #ffffff;
-		background-color: #f26522;
-		border-color: #f26522;
-		border-width: 3px;
-}
-.btn-warning:hover, .btn-primary:hover {
-	color: #ffffff;
-	background-color: rgba(0, 0, 0, 0.2);
-	border-color: #FFF;
-	border-width:	3px;
-}
-.btn:active {
-    color: #ffffff;
-    background-color: transparent;
-    border-color: #FFF;
-		box-shadow: none;
-}
-.btn-primary:active:focus, .btn-primary:active:hover {
-    color: #ffffff;
-		background-color: #4582ec;
-		border-color: #4582ec;
-		box-shadow: none;
-}
-.btn-primary:focus, .btn-warning:focus
-{
-	color: #ffffff;
-	background-color: transparent;
-	border-color: #fff;
-	box-shadow: none;
-
-}
-.btn-warning:focus:active,.btn-warning:hover:active {
-    color: #ffffff;
-		background-color: #f26522;
-		border-color: #f26522;
-		box-shadow: none;
-}
-.btn-rounded {
-border-radius: 30px;
-padding: 10px 30px;
-}
-.navbar-nav > li > a {
-    margin: 12.5px 6px;
-    padding: 8px 12px;
-    border: 2px solid transparent;
-    border-radius: 4px;
-}
-.navbar-default .navbar-nav > li > a {
-    color: #007ef3;
-}
-.navbar-default {
-	box-shadow: 0 4px 13px 0 rgba(0, 0, 0, 0.05);
-}
-.navbar-nav > li > a:hover {
-    border: 2px solid #007ef3;
-		border-radius: 30px;
-}
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color: #007ef3;
-    background-color: transparent;
-}
-ul.nav .tester a, ul.nav .tester a:hover, ul.nav .tester a:focus  {
-		color: #FFF;
-		border: 2px solid transparent;
-		border-radius: 30px;
-		background: #f90;
-}
 ul.nav .client_login a  {
+		color: #007ef3;
 		border: 2px solid #007ef3;
 		border-radius: 30px;
 }
 ul.nav .client_login a:hover, ul.nav .tester a:focus  {
+		color: #007ef3;
 		border: 2px solid #007ef3;
 		border-radius: 30px;
 		background: transparent;
 }
-.clearfix {
-	margin-top: 5px;
-	margin-bottom: 5px;
-}
-#header {
-	background: url('../img/background.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-	height: 100vh;
-}
-.tagline {
-	 color: #FFF;
-	 font-size: 36px;
-	 letter-spacing: 1px;
-	 line-height: 120%;
-	 margin-bottom: 1em;
-}
-.logo {
-	background-repeat: no-repeat;
-	margin: 10em auto 2em;
-	max-width: 300px;
-}
-.gb_Zb, .logo {
-		display: block;
-}
-#how_it_works, #testimony {
-	background:#FFF;
-}
-.headline {
-	margin: 2.5em auto 1em;
-	color: #4582ec;
-}
-.title {
-	text-align: left;
-	margin-bottom: 0.5em;
-	color: #4582ec;
-}
-.skenario {
-	margin: 0 auto;
-	max-width: 350px;
-}
-.description {
-	font-family: 'Gotham Rounded';
-	font-weight: 300;
-	text-align: left;
-}
-.separation {
-	margin: 2em auto;
-}
-.faq_headline, .testimony_headline, .partner_headline {
+.faq_headline {
 	margin: 2em auto 1em;
 	color: #767676;
 }
@@ -206,40 +36,6 @@ ul.nav .client_login a:hover, ul.nav .tester a:focus  {
 #faq {
 	margin-top: 2em;
 }
-#footer {
-	margin-top: 2em;
-	background: #4582ec;
-	color: #fff;
-	padding: 30px;
-}
-#footer a {
-	margin-top: 10px;
-}
-.testimony_description {
-	font-family: 'Gotham Rounded';
-	font-weight: 300;
-	text-align: left;
-	color: #767676;
-}
-.testimony_title {
-	font-size: 18px;
-	font-family: 'Gotham Rounded';
-	font-weight: 500;
-	text-align: left;
-	color: #767676;
-}
-.testimony_image {
-	display: block;
-	max-width: 150px;
-	margin: 0.2em 0;
-}
-.partner_clients {
-	text-align: center;
-	margin-bottom: 2em;
-}
-.btn-rounded {
-	width: 219px;
-}
 .panel-title {
   font-weight: 300;
 }
@@ -259,64 +55,21 @@ ul.nav .client_login a:hover, ul.nav .tester a:focus  {
   color: #767676;
 }
 @media screen and (max-width: 768px) {
-	.tagline {
-		 color: #FFF;
-		 font-size: 18px;
-		 letter-spacing: 1px;
-		 line-height: 120%;
-		 margin-bottom: 0.5em;
-	}
   #faq {
     background: #ebebeb;
     margin-top: 3.3em;
   }
-	.btn-rounded {
-		width: 171px;
-	}
-	.clearfix {
-		margin: 2px auto;
-	}
-	.logo {
-		background-repeat: no-repeat;
-		margin: 8em auto 1em;
-		max-width: 200px;
-	}
 	.faq_headline {
 		font-size: 24px;
 		margin: 1em auto 1em;
 	}
-	.title, .faq_title {
+	.faq_title {
 		font-size: 18px;
 		text-align: center;
-	}
-	.testimony_title {
-			font-size: 14px;
-	}
-	.skenario {
-		margin: 0 auto;
-		max-width: 210px;
-	}
-	.skenario-image-1 {
-		float: left;
-	}
-	.skenarion-description-1 {
-		float:right;
 	}
 	.faq_p {
 		text-align: center;
 		padding: 0 10px;
-	}
-	.skenario_p {
-		text-align: center;
-		padding: 0 10px;
-	}
-	.navbar {
-		background:rgba(0,0,0,0.69);
-		min-height: 45px;
-	}
-	.navbar-toggle {
-		margin-top: 9px;
-		margin-bottom: 9px;
 	}
   .panel-title {
     font-size: 16px;
