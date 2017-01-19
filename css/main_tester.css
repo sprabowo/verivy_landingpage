@@ -245,9 +245,6 @@ ul.nav .client_login a, ul.nav .client_login a:hover, ul.nav .tester a:focus  {
 	text-align: center;
 	margin-bottom: 2em;
 }
-.btn-rounded {
-	width: 219px;
-}
 .partner_img {
 	max-height: 50px;
 }
@@ -255,6 +252,44 @@ ul.nav .client_login a, ul.nav .client_login a:hover, ul.nav .tester a:focus  {
 {
 	max-height: 40px;
 }
+.form-diri
+{
+	background-color: #f9f7f7;
+	color: black;
+	font-weight:lighter;
+}
+.button-form-diri{
+	display: block;
+	font-size: 14px;
+	width: 446px;
+	border-radius: 30px;
+	height: 35px;
+	padding: 6px 10px;
+
+}
+.button-form-facebook{
+	display: inline-block;
+	font-size: 14px;
+	width: 220px;
+	border-radius: 30px;
+	height: 35px;
+	padding: 6px 10px;
+	background-color: #3B5998;
+	color: white;
+
+}
+.button-form-google{
+	display: inline-block;
+	font-size: 14px;
+	width: 220px;
+	border-radius: 30px;
+	height: 35px;
+	padding: 6px 10px;
+	background-color: #DB4437;
+	color: white;
+
+}
+
 @media screen and (max-width: 768px) {
 	.tagline {
 		 color: #FFF;

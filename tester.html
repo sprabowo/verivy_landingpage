@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
     <link rel="stylesheet" href="css/main_tester.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
@@ -19,7 +21,7 @@
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
               <img alt="verivy" src="img/logo-white.png">
             </a>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -43,8 +45,8 @@
       <div class="container text-left">
         <div class="col-md-10 col-md-offset-1 hidden-xs">
           <!--<img src="img/logo.png" class="img-responsive" width="300px">-->
-          <h1 class="tagline">Lorem Ipsum</h1>
-          <h2 class="subtagline">Lorem Dolor</h2>
+          <h1 class="tagline">Test Aplikasi, Dapat Bayaran!</h1>
+          <h2 class="subtagline">Gimana Caranya?</h2>
           <ol class="step-by">
           <li>Coba Aplikasinya</li>
           <li>Test Sesuai Instruksi</li>
@@ -55,23 +57,29 @@
         </div>
       <div class="col-sm-12 visible-xs-block">
         <!--<img src="img/logo.png" class="img-responsive" width="300px">-->
-        <h5 class="tagline">TEST APLIKASIMU DAN DAPATKAN FEEDBACK SECARA INSTAN</h5>
-        <button class="btn btn-primary btn-rounded btn-sm">Coba Sekarang</button>
+        <h5 class="tagline">Test Aplikasi, Dapat Bayaran!</h5><h5 class="subtagline">Gimana Caranya?</h5>
+          <ol class="step-by" style="font-size: 15px;">
+          <li>Coba Aplikasinya</li>
+          <li>Test Sesuai Instruksi</li>
+          <li>Berikan Saran</li>
+          <li>Dapatkan Insentif</li>
+          </ol>
+        <button class="btn btn-warning btn-rounded btn-lg">Sign Up</button>
         <div class="clearfix">
         </div>
-        <button class="btn btn-warning btn-rounded btn-sm">Lihat Contoh</button>
-      </div>
+    
       </div>
     </section>
     <section id="how_it_works">
       <div class="container text-center">
         <div class="col-md-10 col-md-offset-1">
           <!--<img src="img/logo.png" class="img-responsive" width="300px">-->
-          <h2 class="headline">HOW IT WORKS</h2>
+          <h2 class="headline">SIGN UP</h2>
           <div class="row visible-xs-block">
             <div class="col-md-6 skenario-image-1">
               <img class="img-responsive skenario" src="img/buat-skenario-pengujian.png"/>
             </div>
+
               <div class="col-md-6 description skenario-description-1">
                   <h3 class="title">Buat Skenario Pengujian</h3>
                   <p class="skenario_p">Rancang instruksi yang akan dilakukan oleh responden saat menggunakan aplikasi Anda. Kami akan membantu Anda membuat instruksi yang baik, untuk mendapatkan hasil yang optimal.</p>
@@ -79,12 +87,29 @@
 
           </div>
           <div class="row hidden-xs">
-              <div class="col-md-6 description skenario-description-1">
-                  <h3 class="title">Buat Skenario Pengujian</h3>
-                  <p class="skenario_p">Rancang instruksi yang akan dilakukan oleh responden saat menggunakan aplikasi Anda. Kami akan membantu Anda membuat instruksi yang baik, untuk mendapatkan hasil yang optimal.</p>
+              <div class="col-md-6 description skenario-image-1">
+                 <img class="img-responsive" src="img/icon-data-diri.jpg"/>
               </div>
-              <div class="col-md-6 skenario-image-1">
-                  <img class="img-responsive" src="img/buat-skenario-pengujian.png"/>
+              <div class="col-md-6  skenario-description-1">
+              <h3 style="color: #FF9900; text-align: left;font-weight:normal;"> Data Dirimu </h3>
+              <form style="text-align: left;">
+              <div class="form-group">
+                    <input type="name" class="form-control form-diri"  id="fullname" placeholder="Nama Lengkap">
+                  </div>
+                  <div class="form-group data-diri">
+                    <input type="email" class="form-control form-diri" id="email" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control form-diri" id="pwd" placeholder="Password">
+                  </div>
+                   <div class="form-group">
+                    <input type="password" class="form-control form-diri" id="repwd" placeholder="Re-password">
+                  </div>
+                  <button type="submit" class="btn btn-warning btn-rounded button-form-diri">Sign Up</button>
+                  <h5 style="text-align: center;font-weight:lighter;">or,</h5>
+                   <button type="submit" class="btn btn-default btn-rounded button-form-facebook"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</button>
+                    <button type="submit" class="btn btn-default btn-rounded button-form-google">Google Sign In</button>
+                </form>
               </div>
           </div>
           <div class="separation">
