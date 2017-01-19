@@ -120,12 +120,10 @@ ul.nav .tester a, ul.nav .tester a:hover, ul.nav .tester a:focus  {
 		background: #f90;
 }
 ul.nav .client_login a  {
-		color: #FFF;
 		border: 2px solid #007ef3;
 		border-radius: 30px;
 }
 ul.nav .client_login a:hover, ul.nav .tester a:focus  {
-		color: #FFF;
 		border: 2px solid #007ef3;
 		border-radius: 30px;
 		background: transparent;
@@ -181,32 +179,31 @@ ul.nav .client_login a:hover, ul.nav .tester a:focus  {
 .separation {
 	margin: 2em auto;
 }
-.value_headline, .testimony_headline, .partner_headline {
-	margin: 2.5em auto 1em;
+.faq_headline, .testimony_headline, .partner_headline {
+	margin: 2em auto 1em;
 	color: #767676;
 }
-.value_description .value_img {
+.faq_description .faq_img {
 	display: block;
 	height: 200px;
 	width: auto;
 	margin: 1em auto;
 }
-.value_description {
+.faq_description {
 	font-family: 'Gotham Rounded';
 	font-weight: 300;
 	text-align: right;
 }
-.value_title {
+.faq_title {
 	text-align: center;
 	margin-bottom: 0.5em;
 	color: #767676;
 }
-.value_p {
-	text-align: center;
-	padding: 0 25px;
+.faq_p {
+	text-align: justify;
+	padding: 0 30px;
 }
-#values {
-	background:#ebebeb;
+#faq {
 	margin-top: 2em;
 }
 #footer {
@@ -243,6 +240,24 @@ ul.nav .client_login a:hover, ul.nav .tester a:focus  {
 .btn-rounded {
 	width: 219px;
 }
+.panel-title {
+  font-weight: 300;
+}
+.panel-body {
+  font-weight: 300;
+}
+.panel-group .panel {
+    margin-bottom: 0;
+    border-radius: 4px;
+    text-align: left;
+}
+.panel-title > a {
+    text-decoration: none;
+    color: #767676;
+}
+.faq_subline {
+  color: #767676;
+}
 @media screen and (max-width: 768px) {
 	.tagline {
 		 color: #FFF;
@@ -251,6 +266,10 @@ ul.nav .client_login a:hover, ul.nav .tester a:focus  {
 		 line-height: 120%;
 		 margin-bottom: 0.5em;
 	}
+  #faq {
+    background: #ebebeb;
+    margin-top: 3.3em;
+  }
 	.btn-rounded {
 		width: 171px;
 	}
@@ -262,11 +281,11 @@ ul.nav .client_login a:hover, ul.nav .tester a:focus  {
 		margin: 8em auto 1em;
 		max-width: 200px;
 	}
-	.headline, .value_headline, .testimony_headline {
+	.faq_headline {
 		font-size: 24px;
-		margin: 3em auto 1em;
+		margin: 1em auto 1em;
 	}
-	.title, .value_title {
+	.title, .faq_title {
 		font-size: 18px;
 		text-align: center;
 	}
@@ -277,7 +296,13 @@ ul.nav .client_login a:hover, ul.nav .tester a:focus  {
 		margin: 0 auto;
 		max-width: 210px;
 	}
-	.value_p {
+	.skenario-image-1 {
+		float: left;
+	}
+	.skenarion-description-1 {
+		float:right;
+	}
+	.faq_p {
 		text-align: center;
 		padding: 0 10px;
 	}
@@ -293,4 +318,10 @@ ul.nav .client_login a:hover, ul.nav .tester a:focus  {
 		margin-top: 9px;
 		margin-bottom: 9px;
 	}
+  .panel-title {
+    font-size: 16px;
+  }
+  .panel-body {
+    font-size: 14px;
+  }
 }
