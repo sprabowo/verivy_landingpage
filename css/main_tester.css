@@ -259,9 +259,10 @@ ul.nav .client_login a, ul.nav .client_login a:hover, ul.nav .tester a:focus  {
 .button-form-diri{
 	display: block;
 	font-size: 14px;
-	width: 446px;
 	border-radius: 30px;
 	height: 35px;
+	color: #fff;
+	background-color: #F90;
 	padding: 6px 10px;
 
 }
@@ -284,9 +285,14 @@ ul.nav .client_login a, ul.nav .client_login a:hover, ul.nav .tester a:focus  {
 	padding: 6px 10px;
 	background-color: #DB4437;
 	color: white;
-
 }
-
+.btn-default {
+	transition: background-color 200ms ease-in;
+}
+.data-diri {
+	color: #f90;
+	text-align: center;
+}
 @media screen and (max-width: 768px) {
 	.tagline {
 		 color: #FFF;
@@ -294,9 +300,7 @@ ul.nav .client_login a, ul.nav .client_login a:hover, ul.nav .tester a:focus  {
 		 letter-spacing: 1px;
 		 line-height: 120%;
 		 margin-bottom: 0.5em;
-	}
-	.btn-rounded {
-		width: 171px;
+		 margin-top: 10em;
 	}
 	.clearfix {
 		margin: 2px auto;
@@ -334,8 +338,8 @@ ul.nav .client_login a, ul.nav .client_login a:hover, ul.nav .tester a:focus  {
 		min-height: 45px;
 	}
 	.navbar-toggle {
-		margin-top: 9px;
-		margin-bottom: 9px;
+		margin-top: 15px;
+		margin-bottom: 15px;
 	}
 	.partner_img {
 		max-height: 40px;
@@ -343,5 +347,11 @@ ul.nav .client_login a, ul.nav .client_login a:hover, ul.nav .tester a:focus  {
 	}
 	.navbar-default {
 	    border-color: transparent;
+	}
+	.data-diri {
+			font-size: 18px;
+	}
+	.button-form-google, .button-form-facebook {
+			width: 300px;
 	}
 }

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon" />
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
@@ -49,18 +50,18 @@
             <!--<img src="img/logo.png" class="img-responsive" width="300px">-->
             <img class="logo img-responsive" src="img/logo.png">
             <h2 class="tagline">TEST APLIKASIMU DAN DAPATKAN FEEDBACK SECARA INSTAN</h2>
-            <button class="btn btn-primary btn-rounded btn-lg">Coba Sekarang</button>
+            <button class="btn btn-primary btn-rounded btn-lg">Lihat Contoh</button>
             &nbsp;
-            <button class="btn btn-warning btn-rounded btn-lg">Lihat Contoh</button>
+            <button class="btn btn-warning btn-rounded btn-lg">Coba Sekarang</button>
           </div>
         <div class="col-sm-12 visible-xs-block">
           <!--<img src="img/logo.png" class="img-responsive" width="300px">-->
           <img class="logo img-responsive" src="img/logo.png"/>
           <h5 class="tagline">TEST APLIKASIMU DAN DAPATKAN FEEDBACK SECARA INSTAN</h5>
-          <button class="btn btn-primary btn-rounded btn-sm">Coba Sekarang</button>
+          <button class="btn btn-primary btn-rounded btn-sm">Lihat Contoh</button>
           <div class="clearfix">
           </div>
-          <button class="btn btn-warning btn-rounded btn-sm">Lihat Contoh</button>
+          <button class="btn btn-warning btn-rounded btn-sm">Coba Sekarang</button>
         </div>
         </div>
       </section>
@@ -227,6 +228,9 @@
         if($(this).scrollTop() > document.documentElement.clientHeight * 0.69)
         {
            $('.navbar').css({"background":"#fff"});
+           $('.navbar').css({"transition": "background 350ms ease-in"});
+           $('.navbar').css({"-webkit-transition": "background 350ms ease-in"});
+           $('.navbar').css({"-ms-transition": "background 350ms ease-in"});
            $('.navbar-default .navbar-nav > li > a').css({"color":"#007ef3"});
            $('ul.nav .tester a').css({"color":"#fff"});
         } else {
