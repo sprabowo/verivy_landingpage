@@ -352,6 +352,6 @@ ul.nav .client_login a, ul.nav .client_login a:hover, ul.nav .tester a:focus  {
 			font-size: 18px;
 	}
 	.button-form-google, .button-form-facebook {
-			width: 300px;
+			width:100%;
 	}
 }
