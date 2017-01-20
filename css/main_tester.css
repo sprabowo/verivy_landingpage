@@ -191,9 +191,7 @@ ul.nav .client_login a, ul.nav .client_login a:hover, ul.nav .tester a:focus  {
 	color: #767676;
 }
 .value_description .value_img {
-	display: block;
-	height: 200px;
-	width: auto;
+	display: inline-block;
 	margin: 1em auto;
 }
 .value_description {
@@ -276,7 +274,6 @@ ul.nav .client_login a, ul.nav .client_login a:hover, ul.nav .tester a:focus  {
 	padding: 6px 10px;
 	background-color: #3B5998;
 	color: white;
-
 }
 .button-form-google{
 	display: inline-block;
