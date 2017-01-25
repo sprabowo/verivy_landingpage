@@ -302,9 +302,10 @@ ul.nav .client_login a, ul.nav .client_login a:hover, ul.nav .tester a:focus  {
     display: inline-block;
     width:50%;
 		height: 20em;
-		padding-top: 3em;
 		text-align: center;
-
+}
+.square-title {
+	padding-top: 2em;
 }
 .square-left {
 	background: url('../img/foto-oren.jpg') no-repeat center center fixed;
@@ -318,7 +319,6 @@ ul.nav .client_login a, ul.nav .client_login a:hover, ul.nav .tester a:focus  {
 	display: inline-block;
 	width:50%;
 	height: 20em;
-	padding-top: 3em;
 	text-align: center;
 }
 .square-right {
@@ -328,6 +328,10 @@ ul.nav .client_login a, ul.nav .client_login a:hover, ul.nav .tester a:focus  {
 	-o-background-size: cover;
 	background-size: cover;
 	color: #fff;
+}
+.square-desc {
+	margin: 0 2em;
+	font-weight: 500;
 }
 @media screen and (max-width: 768px) {
 	.tagline {
@@ -394,10 +398,12 @@ ul.nav .client_login a, ul.nav .client_login a:hover, ul.nav .tester a:focus  {
 			font-size: 18px;
 	}
 	#square1, #square2 {
-			height: 10em;
-			font-weight: 300;
-			padding-top: 0.5em;
-			padding-left: auto;
-			padding-right: auto;
+			width: 100%;
+			height: auto;
+			display: block;
+			padding-bottom: 2em;
+	}
+	.square-desc {
+		font-size:14px;
 	}
 }
