@@ -54,6 +54,9 @@ ul.nav .client_login a:hover, ul.nav .tester a:focus  {
 .faq_subline {
   color: #767676;
 }
+.panel-heading {
+    cursor: pointer;
+}
 @media screen and (max-width: 768px) {
   #faq {
     background: #ebebeb;
