@@ -190,6 +190,10 @@ ul.nav .client_login a, ul.nav .client_login a:hover, ul.nav .tester a:focus  {
 	margin: 2.5em auto 1em;
 	color: #767676;
 }
+.faq_headline {
+	margin: 1.5em auto 1em;
+	color: #767676;
+}
 .value_description .value_img {
 	display: inline-block;
 	margin: 1em auto;
@@ -349,7 +353,7 @@ ul.nav .client_login a, ul.nav .client_login a:hover, ul.nav .tester a:focus  {
 		margin: 8em auto 1em;
 		max-width: 200px;
 	}
-	.headline, .value_headline, .testimony_headline {
+	.headline, .faq_headline, .value_headline, .testimony_headline {
 		font-size: 24px;
 		margin: 3em auto 1em;
 	}
